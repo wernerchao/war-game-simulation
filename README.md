@@ -13,8 +13,8 @@ https://en.wikipedia.org/wiki/War_(card_game)
 - repeat this game until one list is empty
 
 ## Assumptions
-- after one player won all the cards on table, these cards are *shuffled* and moved to the bottom of their deck
-- during battle, the face-up cards are used to battle, while the face-down cards are not used
+- after one player won all cards on the table, these cards are *shuffled* and moved to the bottom of their deck
+- during battles, only face-up cards are used to compare values. Face-down cards are not used
 - ace is represented as number 14 in the simulation
 - no suits are attached to any card value, only integers are used
 
@@ -29,10 +29,11 @@ python game.py --help
 - run the following commands to play:
 ```
 git clone https://github.com/wernerchao/war-game-simulation
+cd war-game-simulation/
 python3 game.py
 ```
 
-- interactive play round by round:
+- interactive play round by round *[using interactive will activate verbose]*:
 ```
 python3 game.py --interactive 1
 ```

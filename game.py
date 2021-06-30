@@ -47,6 +47,7 @@ def main():
     player_b = deck[len(deck)//2:]
     while len(player_a) > 0 and len(player_b) > 0:
         if args.interactive == 1:
+            args.verbose = True
             input("Press Enter to continue...")
         # draw cards
         a, b = player_a.pop(0), player_b.pop(0)
